@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <title>Page Not Found | Farouk Shakul</title>
+  <!-- Include your existing head content -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        <!-- Essential Open Graph Tags -->
+    <meta property="og:title" content="Farouk Shakul | Digital Experience Designer">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourdomain.com">
+    <meta property="og:image" content="https://yourdomain.com/social-preview.jpg">
+        <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main style="min-height:60vh; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center;">
+    <h1 style="font-size:3rem; margin-bottom:1rem;">404</h1>
+    <p style="font-size:1.25rem; margin-bottom:2rem;">The page you're looking for doesn't exist.</p>
+    <a href="/" style="color:var(--secondary); font-weight:600;">Return Home</a>
+  </main>
+  <!-- Include your existing footer -->
+   
+  <footer class="neo-footer">
+    <div class="footer-grid">
+        <!-- Footer Column 1 -->
+        <div class="footer-col brand-col">
+            <div class="footer-brand">
+                <img src="lm.jpg" alt="Logo" class="footer-logo">
+                <p class="footer-tagline">Crafting Digital Excellence</p>
+            </div>
+            <div class="footer-newsletter">
+                <h4>Get Insights</h4>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your best email">
+                    <button type="submit">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Footer Column 2 -->
+        <div class="footer-col">
+            <h4 class="footer-title">Navigation</h4>
+            <ul class="footer-links">
+                <li><a href="services.html" class="footer-link hover-strike">Services</a></li>
+                <li><a href="work.html" class="footer-link hover-strike">Case Studies</a></li>
+                <li><a href="insights.html" class="footer-link hover-strike">Design Insights</a></li>
+                <li><a href="contact.html" class="footer-link hover-strike">Collaborate</a></li>
+            </ul>
+        </div>
+
+        <!-- Footer Column 3 -->
+        <div class="footer-col">
+            <h4 class="footer-title">Connect</h4>
+            <div class="footer-social">
+                <a href="#" class="social-circle linkedin-hover">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="#" class="social-circle behance-hover">
+                    <i class="fab fa-behance"></i>
+                </a>
+                <a href="#" class="social-circle dribbble-hover">
+                    <i class="fas fa-basketball-ball"></i>
+                </a>
+            </div>
+            <div class="footer-contact">
+                <p>hello@faroukdesign.com</p>
+                <p>+1 (555) 123-4567</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+        <p>© 2023 Farouk Shakul. Digital Experience Crafted with Passion</p>
+        <div class="legal-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+        </div>
+    </div>
+
+    <!-- Back to Top -->
+    <button class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+</footer>
+<!-- Cookie Consent Banner -->
+<div id="cookie-consent" style="
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--dark);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  z-index: 10000;
+  display: none;
+  border-top: 2px solid var(--secondary);
+">
+  <div style="max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: center;">
+    <span style="flex: 1;">We use cookies to enhance your experience.</span>
+    <button onclick="acceptCookies()" style="
+      margin-left: 1.5rem;
+      padding: 0.5rem 1.5rem;
+      background: var(--secondary);
+      color: white;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      font-weight: 600;
+    ">
+      Accept
+    </button>
+  </div>
+</div>
+
+<script>
+  // Add this right above your existing script.js inclusion
+  function acceptCookies() {
+    localStorage.setItem('cookies-accepted', 'true');
+    document.getElementById('cookie-consent').style.display = 'none';
+  }
+  
+  if(!localStorage.getItem('cookies-accepted')) {
+    document.getElementById('cookie-consent').style.display = 'block';
+  }
+</script>
+
+<!-- Keep your existing script.js inclusion -->
+
+<script src="script.js"></script>
+</body>
+</html>
